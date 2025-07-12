@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Garment – Rewear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rewear</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="upload.html">Upload</a>
+            <a href="profile.html">Profile</a>
+            <a href="chat.html">Chat</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section eco-bg">
+            <h2>Upload a Garment</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Garment Name" required><br>
+                <textarea name="description" placeholder="Description" required></textarea><br>
+                <input type="text" name="size" placeholder="Size (e.g. M, L, 32)" required><br>
+                <input type="text" name="condition" placeholder="Condition (e.g. New, Gently Used)" required><br>
+                <input type="text" name="category" placeholder="Category (e.g. Shirt, Pants)" required><br>
+                <input type="text" name="gender" placeholder="Gender (e.g. Unisex, Male, Female)" required><br>
+                <input type="text" name="status" placeholder="swap/donate/sell" required><br>
+                <input type="text" name="owner_id" placeholder="Your User ID" required><br>
+                <input type="file" name="image" id="imageInput" accept="image/*" required><br>
+                <img id="imagePreview" src="#" alt="Image Preview" style="display:none;max-width:200px;"/>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rewear. Eco-friendly. Community-driven.</p>
+    </footer>
+    <script src="upload.js"></script>
+</body>
+</html> 

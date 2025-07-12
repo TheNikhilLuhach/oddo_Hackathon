@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f5f7f2;
+    color: #2e4d36;
+}
+.eco-bg {
+    background: linear-gradient(90deg, #e6f4ea 0%, #f5f7f2 100%);
+    color: #2e4d36;
+}
+header {
+    background: #b7d7b0;
+    color: #2e4d36;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+nav a {
+    color: #2e4d36;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #388e3c;
+}
+.hero {
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+.card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(46,77,54,0.08);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    /* Animation hook: add GSAP/Lottie here */
+}
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(46,77,54,0.16);
+}
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card-content {
+    padding: 1rem;
+}
+@media (max-width: 600px) {
+    .grid-container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 0.5rem;
+    }
+} 

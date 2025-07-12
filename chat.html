@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat – Rewear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rewear</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="upload.html">Upload</a>
+            <a href="profile.html">Profile</a>
+            <a href="chat.html">Chat</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+    <main>
+        <section class="chat eco-bg">
+            <h2>Realtime Chat</h2>
+            <div id="chatWindow" class="card" style="height:300px;overflow-y:auto;"></div>
+            <form id="chatForm">
+                <input type="text" id="chatInput" placeholder="Type your message..." required>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rewear. Eco-friendly. Community-driven.</p>
+    </footer>
+    <script src="chat.js"></script>
+</body>
+</html> 
