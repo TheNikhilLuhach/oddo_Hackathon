@@ -63,9 +63,3 @@ All frontend and backend modules have starter templates and comments for where t
 
 ---
 
-Would you like to:
-- Add more features or polish any module?
-- Get deployment instructions for Render/Heroku?
-- See a file/folder tree or get a zipped starter pack?
-
-Let me know how you want to proceed! 
